@@ -1,0 +1,23 @@
+@import "./colors.scss";
+@import "./fonts.scss";
+
+//headers
+
+$h1-header: $text-xxl-font;
+$h2-header: $text-xl-font;
+$header-quote: 5rem;
+
+h1 {
+     font-family: $primary-font;
+     font-size: 4rem !important;
+     line-height: 1.05 !important;
+     font-weight: $header-weight !important;
+}
+
+p {
+     font-family: $secondary-font;
+     color: rgba($primary-color, 0.9);
+     font-size: $text-font !important;
+     line-height: 1.65 !important;
+     font-weight: $text-weight !important;
+}

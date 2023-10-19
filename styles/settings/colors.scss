@@ -1,0 +1,12 @@
+// primary colors
+:root {
+     --black: #333333;
+     --white: #ffff;
+     --cream: #efeee8;
+     --darkcream: #e4e2d3;
+}
+
+$primary-color: var(--black);
+$secondary-color: var(--cream);
+$darkcream-color: var(--darkcream);
+$white: var(--white);
