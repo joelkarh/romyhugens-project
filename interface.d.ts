@@ -1,4 +1,3 @@
-interface MenuItem {
-  id: number;
+interface buttonTxt {
   title: string;
 }

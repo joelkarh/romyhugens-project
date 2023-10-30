@@ -1,4 +1,26 @@
 @import "./settings/index.scss";
 body {
      font-size: $body-font;
+     background-color: var(--cream) !important;
+}
+header {
+     position: relative;
+     padding: 33px 32px;
+     margin-bottom: 80px;
+     border-bottom: 1px solid var(--black);
+}
+.hero {
+     margin-bottom: 200px;
+}
+.homeSection2 {
+     position: relative;
+     max-width: 1212px;
+     width: 100%;
+     margin-left: auto;
+     margin-right: auto;
+     margin-bottom: 120px;
+     a {
+          margin-left: auto;
+          margin-right: auto;
+     }
 }
