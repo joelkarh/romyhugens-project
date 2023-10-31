@@ -1,8 +1,7 @@
-import type { Metadata } from 'next'
-import head from 'next/head'
-import Header from '../../components/header'
-import "../../styles/global.scss"
-import Script from 'next/script'
+import type { Metadata } from 'next';
+import Header from '../../components/header';
+import "../../styles/global.scss";
+import Script from 'next/script';
 
 export const metadata: Metadata = {
   title: 'Romy hugens',

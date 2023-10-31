@@ -1,4 +1,4 @@
-@import "./settings/index.scss";
+@import "./index.scss";
 body {
      font-size: $body-font;
      background-color: var(--cream) !important;
@@ -23,4 +23,15 @@ header {
           margin-left: auto;
           margin-right: auto;
      }
+}
+.homeSection3 {
+     overflow: hidden;
+     margin-bottom: 140px;
+     .container-fluid {
+          padding-left: 0;
+          padding-right: 0;
+     }
+}
+.review {
+     margin-bottom: 120px;
 }

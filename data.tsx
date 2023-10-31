@@ -20,7 +20,7 @@ export const heroItems = {
      btnText: "Join me",
 }
 
-export const herosection2 = {
+export const homesection2 = {
      title: "So... how does it actually work?",
      subtitle: "On our journey I will teach you different excercises and techniques so you can create a life you deserve. Below are only some of them.",
      btnText: "Let's call",
@@ -42,4 +42,64 @@ export const herosection2 = {
           }
      ]
 }
+export const homeSection3 = {
+     src: '/koken.jpeg',
+     quote: 'Life shoulld not only be lived,it should be celebrated',
+     author: 'Mark Twain : The Story of the Fox',
+     alt: ' Romy hugens is in the kitchen cooking a healthy meal'
+}
 
+export const reviews = {
+     title: 'Join hundreds of happy people',
+     btnText: "Let's call",
+     reviewsData: [
+          {
+               name: "Johanna Jackson",
+               job: 'Agency owner',
+               imgSrc: '/reviews/romy.jpg',
+               description: 'Working with Maria was an absolutely life changing. I finally made a good life work balance, took my business of the ground while keeping healthy relationship with my friends and family.'
+          },
+          {
+               name: "Johanna Jackson",
+               job: 'Agency owner',
+               imgSrc: '/reviews/romy.jpg',
+               description: 'Working with Maria was an absolutely life changing. I finally made a good life work balance, took my business of the ground while keeping healthy relationship with my friends and family.'
+          },
+          {
+               name: "Johanna Jackson",
+               job: 'Agency owner',
+               imgSrc: '/reviews/romy.jpg',
+               description: 'Working with Maria was an absolutely life changing. I finally made a good life work balance, took my business of the ground while keeping healthy relationship with my friends and family.'
+          },
+          {
+               name: "Johanna Jackson",
+               job: 'Agency owner',
+               imgSrc: '/reviews/romy.jpg',
+               description: 'Working with Maria was an absolutely life changing. I finally made a good life work balance, took my business of the ground while keeping healthy relationship with my friends and family.'
+          },
+          {
+               name: "Johanna Jackson",
+               job: 'Agency owner',
+               imgSrc: '/reviews/romy.jpg',
+               description: 'Working with Maria was an absolutely life changing. I finally made a good life work balance, took my business of the ground while keeping healthy relationship with my friends and family.'
+          },
+          {
+               name: "Johanna Jackson",
+               job: 'Agency owner',
+               imgSrc: '/reviews/romy.jpg',
+               description: 'Working with Maria was an absolutely life changing. I finally made a good life work balance, took my business of the ground while keeping healthy relationship with my friends and family.'
+          },
+          {
+               name: "Johanna Jackson",
+               job: 'Agency owner',
+               imgSrc: '/reviews/romy.jpg',
+               description: 'Working with Maria was an absolutely life changing. I finally made a good life work balance, took my business of the ground while keeping healthy relationship with my friends and family.'
+          },
+          {
+               name: "Johanna Jackson",
+               job: 'Agency owner',
+               imgSrc: '/reviews/romy.jpg',
+               description: 'Working with Maria was an absolutely life changing. I finally made a good life work balance, took my business of the ground while keeping healthy relationship with my friends and family.'
+          }
+     ],
+}

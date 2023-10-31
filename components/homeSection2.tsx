@@ -1,8 +1,8 @@
-import { herosection2 } from "../data"
+import { homesection2 } from "../data"
 import Button from "./button"
-import styles from "./homesection.module.scss"
+import styles from "./homesection2.module.scss"
 function HomeSection2() {
-     const { title, subtitle, btnText, steps } = herosection2
+     const { title, subtitle, btnText, steps } = homesection2
      return (
           <>
                <section className="homeSection2">
@@ -26,6 +26,7 @@ function HomeSection2() {
                                         <p>{description}</p>
                                    </div>
                               ))
+
                               }
                          </div>
                          <div className="row">
