@@ -1,15 +1,50 @@
+"use client";
 import Button from './button'
 import { reviews } from '../data'
 import styles from "./reviews.module.scss"
-import Image from 'next/image'
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Script from 'next/script';
+import ReviewBox from './reviewBox';
+import { useEffect, useRef } from 'react';
 
-
-let tl
+gsap.registerPlugin(ScrollTrigger);
+let wrapper
 function Reviews() {
      const { title, btnText, reviewsData } = reviews
+     const sectionRef = useRef(null);
+     const triggerRef = useRef(null);
+
+     gsap.registerPlugin(ScrollTrigger);
+
+     useEffect(() => {
+          const pin = gsap.fromTo(
+               sectionRef.current,
+               {
+                    translateX: 0,
+               },
+               {
+                    translateX: "-100vw",
+                    ease: "none",
+                    duration: 1,
+                    scrollTrigger: {
+                         trigger: triggerRef.current,
+                         markers: true,
+                         start: "-250% top ",
+                         end: "bottom",
+                         scrub: 0.6,
+
+                    },
+               }
+          );
+          return () => {
+               {/* A return function for killing the animation on component unmount */ }
+               pin.kill();
+          };
+     }, []);
+
+
+
      return (
           <>
                <Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" />
@@ -24,24 +59,13 @@ function Reviews() {
                               </div>
                          </div>
                     </div>
-                    <div className="container-fluid px-0">
+                    <div className="container-fluid px-0 overflow-hidden">
                          <div className="row">
-                              <div className="col">
-                                   <div className={`${styles.reviewWrapper}`}>
+                              <div ref={sectionRef} className="col">
+                                   <div ref={triggerRef} className={`${styles.reviewWrapper}`}>
                                         {
                                              reviewsData?.map(({ name, job, imgSrc, description }, i) => (
-                                                  <div key={i} className={`${styles.reviewBox}`}>
-                                                       <div className={`${styles.reviewHeading}`}>
-                                                            <div className={`${styles.reviewHead}`}>
-                                                                 <Image src={imgSrc} fill alt='' className={styles.reviewImg} />
-                                                            </div>
-                                                            <div className={styles.reviewHeadContent}>
-                                                                 <p>{name}</p>
-                                                                 <span>{job}</span>
-                                                            </div>
-                                                       </div>
-                                                       <p className={`${styles.reviewContent}`}>{description} </p>
-                                                  </div>
+                                                  <ReviewBox key={i} name={name} imgSrc={imgSrc} job={job} description={description} />
                                              ))
                                         }
                                    </div>

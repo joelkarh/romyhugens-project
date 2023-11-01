@@ -1,9 +1,10 @@
-import React from 'react'
+import styles from "./reviews.module.scss";
+import Image from 'next/image';
 
-function ReviewBox() {
+function ReviewBox({ imgSrc, name, job, description }: reviewBox) {
      return (
           <>
-               <div key={i} className={`${styles.reviewBox}`}>
+               <div className={`${styles.reviewBox} reviewBox`}>
                     <div className={`${styles.reviewHeading}`}>
                          <div className={`${styles.reviewHead}`}>
                               <Image src={imgSrc} fill alt='' className={styles.reviewImg} />
