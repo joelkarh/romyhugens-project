@@ -148,6 +148,7 @@ export const homeSection4 = {
           },
           {
                title: "My coaching",
+
           },
           {
                title: "Other coaches",
@@ -156,21 +157,70 @@ export const homeSection4 = {
      content: [
           {
                title: "Meditation",
+               check: <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 1L6 12L1 7" stroke="#333333" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+               </svg>,
+               unchecked: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="#333333" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M6 6L18 18" stroke="#333333" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+               </svg>
+               ,
+
           },
           {
                title: "Weekly 1 on 1 calls",
+               check: <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 1L6 12L1 7" stroke="#333333" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+               </svg>,
+               unchecked: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="#333333" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M6 6L18 18" stroke="#333333" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+               </svg>
+               ,
           },
           {
                title: "Personalized healing plan",
+               check: <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 1L6 12L1 7" stroke="#333333" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+               </svg>,
+               unchecked: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="#333333" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M6 6L18 18" stroke="#333333" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+               </svg>
+               ,
           },
           {
                title: "Bespoke approach",
+               check: <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 1L6 12L1 7" stroke="#333333" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+               </svg>,
+               unchecked: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="#333333" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M6 6L18 18" stroke="#333333" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+               </svg>
+               ,
           },
           {
                title: "Yoga classes",
+               check: <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 1L6 12L1 7" stroke="#333333" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+               </svg>,
+               unchecked: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="#333333" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M6 6L18 18" stroke="#333333" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+               </svg>
+               ,
           },
           {
                title: "Diet advice",
+               check: <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 1L6 12L1 7" stroke="#333333" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+               </svg>,
+               unchecked: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="#333333" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M6 6L18 18" stroke="#333333" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+               </svg>
+               ,
           },
      ]
 }

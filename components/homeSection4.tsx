@@ -1,7 +1,9 @@
+'use client'
 import styles from "./homesection4.module.scss"
 import { homeSection4 } from "../data"
 import Button from "./button"
 import Table from "./table"
+import Checked from "./checked"
 
 function HomeSection4() {
      const { title, description, btnTitle, headTitles, content } = homeSection4
@@ -19,7 +21,7 @@ function HomeSection4() {
                               <Button title={btnTitle} />
                          </div>
                          <div className="col-7">
-                              <div >
+                              <div>
                                    <table>
                                         <thead>
                                              <tr>
@@ -38,12 +40,26 @@ function HomeSection4() {
                                                        ))
                                                   }
                                              </tr>
+                                             <tr>
+                                                  {
+                                                       content.map(({ check }, i) => (
+                                                            <Checked key={i} tableDatacontent={check} />
+                                                       ))
+                                                  }
+                                             </tr>
+                                             <tr>
+                                                  {
+                                                       content.map(({ unchecked }, i) => (
+                                                            <Checked key={i} tableDatacontent={unchecked} />
+                                                       ))
+                                                  }
+                                             </tr>
                                         </tbody>
                                    </table>
                               </div>
                          </div>
                     </div>
-               </section >
+               </section>
           </>
      )
 }

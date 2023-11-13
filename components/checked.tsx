@@ -1,6 +1,6 @@
 
 
-function Table({ tableDatacontent }: tableData) {
+function Checked({ tableDatacontent }: tableData) {
      return (
           <>
                <td>
@@ -10,4 +10,4 @@ function Table({ tableDatacontent }: tableData) {
      )
 }
 
-export default Table
+export default Checked

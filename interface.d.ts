@@ -28,5 +28,5 @@ interface homeSection4 {
   content: string[];
 }
 interface tableData {
-  tableDatacontent: string;
+  tableDatacontent: string | any;
 }

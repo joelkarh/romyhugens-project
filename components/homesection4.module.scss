@@ -12,7 +12,6 @@
                font-weight: 600;
                tr {
                     display: flex;
-                    gap: 32px;
                     width: 100%;
                }
           }
@@ -43,5 +42,33 @@
           font-family: $secondary-font;
      }
      thead {
+          background-color: var(--darkcream);
+          td {
+               width: calc(100% / 3);
+               height: 72px;
+               padding: 27px 15px;
+               text-align: start;
+               &:not(:first-of-type) {
+                    text-align: center;
+               }
+          }
+     }
+     tbody {
+          display: flex;
+          tr {
+               width: 100%;
+               text-align: start;
+               td {
+                    padding: 27px 15px;
+                    background-color: var(--cream);
+                    height: 72px;
+                    &:nth-child(even) {
+                         background-color: var(--darkcream);
+                    }
+               }
+               &:not(:first-of-type) {
+                    text-align: center;
+               }
+          }
      }
 }
