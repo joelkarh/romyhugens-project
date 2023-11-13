@@ -12,14 +12,12 @@ export const menuItems = [
           route: '/'
      },
 ]
-
 export const heroItems = {
      title: "Transform your life and unleash your potential.",
      subTitle: "I've helped thousands to create more stable and sustainable life though my life coaching.",
      imgUrl: "/test-3.jpeg",
      btnText: "Join me",
 }
-
 export const homesection2 = {
      title: "So... how does it actually work?",
      subtitle: "On our journey I will teach you different excercises and techniques so you can create a life you deserve. Below are only some of them.",
@@ -48,7 +46,6 @@ export const homeSection3 = {
      author: 'Mark Twain : The Story of the Fox',
      alt: ' Romy hugens is in the kitchen cooking a healthy meal'
 }
-
 export const reviews = {
      title: 'Join hundreds of happy people',
      btnText: "Let's call",
@@ -102,4 +99,78 @@ export const reviews = {
                description: 'Working with Maria was an absolutely life changing. I finally made a good life work balance, took my business of the ground while keeping healthy relationship with my friends and family.'
           }
      ],
+}
+export const todo = {
+     title: 'Things we will do together',
+     description: 'On our journey I will teach you different excercises and techniques so you can create a life you deserve. Below are only some of them.',
+     todoList: [
+          {
+               id: 1,
+               todoTitle: 'Meditation',
+               imgSrc: '/test1.jpg',
+               todoDescription: 'Nullam dictum felis eu pede mollis pretium. Duis lobortis massa imperdiet quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.',
+               quote: "Obviously I've heard and tried meditation before. But it was only with Maria that I learned how to do it properly and notticed a positive change in me.",
+               author: '',
+               authorWorks: '',
+
+
+
+          },
+          {
+               id: 2,
+               todoTitle: 'Journaling',
+               imgSrc: '/test3.jpg',
+               todoDescription: 'Nullam dictum felis eu pede mollis pretium. Duis lobortis massa imperdiet quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.',
+               quote: "Obviously I've heard and tried meditation before. But it was only with Maria that I learned how to do it properly and notticed a positive change in me.",
+               author: '',
+               authorWorks: '',
+
+          },
+          {
+               id: 3,
+               todoTitle: 'Manifestation',
+               imgSrc: '/test5.jpg',
+               todoDescription: 'Nullam dictum felis eu pede mollis pretium. Duis lobortis massa imperdiet quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.',
+               quote: "Obviously I've heard and tried meditation before. But it was only with Maria that I learned how to do it properly and notticed a positive change in me.",
+               author: '',
+               authorWorks: '',
+
+          },
+     ],
+}
+export const homeSection4 = {
+     title: " Me versus other coaches",
+     description: "Vivamus laoreet. In dui magna, posuere eget, vestibulum et, tempor auctor, justo. Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend augue.",
+     btnTitle: "Let's call",
+     headTitles: [
+          {
+               title: "What we do",
+          },
+          {
+               title: "My coaching",
+          },
+          {
+               title: "Other coaches",
+          },
+     ],
+     content: [
+          {
+               title: "Meditation",
+          },
+          {
+               title: "Weekly 1 on 1 calls",
+          },
+          {
+               title: "Personalized healing plan",
+          },
+          {
+               title: "Bespoke approach",
+          },
+          {
+               title: "Yoga classes",
+          },
+          {
+               title: "Diet advice",
+          },
+     ]
 }

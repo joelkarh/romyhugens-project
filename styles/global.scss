@@ -35,3 +35,31 @@ header {
 .review {
      margin-bottom: 120px;
 }
+.image {
+     position: relative;
+     svg {
+          position: absolute;
+     }
+}
+.todoSvg {
+     position: relative;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     svg {
+          position: relative;
+          background-color: var(--cream);
+          z-index: 2;
+     }
+     &::before {
+          position: absolute;
+          top: auto;
+          content: "";
+          height: 1px;
+          width: 100%;
+          background-color: var(--black);
+          opacity: 0.1;
+     }
+}
