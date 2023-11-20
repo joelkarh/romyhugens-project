@@ -1,14 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+$titlefont: "Prata", serif;
+.brandName {
+     font-family: $titlefont;
+     font-size: 2.25rem;
+     font-weight: 500;
+}
 .navItems {
-     max-width: 450px;
-     width: 100%;
+     width: -webkit-fit-content;
+     width: -moz-fit-content;
+     width: fit-content;
      padding-left: 0;
      padding-right: 56px;
      display: flex;
+     align-items: center;
      justify-content: flex-end;
-     gap: 32px;
      flex-flow: row;
      margin-bottom: 0;
      li {
+          margin-right: 32px;
+          &:last-of-type {
+               margin-right: 0;
+          }
           a {
                font-family: Baskerville;
           }
@@ -28,7 +40,7 @@
           left: auto;
           bottom: auto;
           right: auto;
-          background-color: var(--black);
+          background-color: rgba(#3333, 50%);
      }
 }
 .arrow {

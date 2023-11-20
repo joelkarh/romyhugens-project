@@ -7,7 +7,7 @@ function HomeSection3() {
      return (
           <>
                <section className="homeSection3">
-                    <div className="container-fluid">
+                    <div className="container">
                          <div className={`row ${styles.imagewrapper}`}>
                               <div className="col">
                                    <div className={`${styles.quote__imagewrapper}`}>

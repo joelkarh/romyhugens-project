@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Header from '../../components/header';
 import "../../styles/global.scss";
 import Script from 'next/script';
+import Footer from '../../components/footer';
 
 export const metadata: Metadata = {
   title: 'Romy hugens',
@@ -23,6 +24,7 @@ export default function RootLayout({
       <body>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )

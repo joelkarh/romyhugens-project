@@ -1,0 +1,74 @@
+@import "./../styles/settings/fonts.scss";
+.footerTop {
+     border-top: 1px solid rgba(#3333, 50%);
+
+     padding: 24px 0 0 0 !important;
+}
+.footer {
+     background: #e8e6e0;
+     padding-left: 0 !important;
+     padding-right: 0 !important;
+     p {
+          font-size: 0.75rem;
+          font-family: $primary-font;
+          text-align: end;
+          font-weight: 400;
+          line-height: 1.05;
+          margin-bottom: 0;
+          span {
+               display: inline-block;
+               width: 1rem;
+          }
+     }
+}
+.footerTitle,
+.footerShout,
+.footerLinks {
+     margin-bottom: 80px;
+}
+.footerShout {
+     font-family: $primary-font;
+     font-size: $text-lg-font;
+     font-weight: $text-weight;
+     line-height: 1.1;
+     color: var(--black);
+}
+.footerLinks {
+     ul {
+          margin: 0;
+          padding: 0;
+          display: flex;
+          li {
+               margin-right: 24px;
+               &:last-of-type {
+                    margin-right: 0px;
+               }
+               a {
+                    text-transform: capitalize;
+               }
+          }
+     }
+}
+.footerSocials {
+     display: flex;
+     justify-content: flex-end;
+     a {
+          margin-right: 16px;
+          &:last-of-type {
+               margin-right: 0px;
+          }
+     }
+}
+.footerTerms {
+     font-size: 0.75rem;
+     opacity: 0.4;
+}
+.footerRow {
+     padding: 1rem 0;
+}
+.footerTitle {
+     color: var(--black);
+     font-family: $titlefont;
+     font-size: 2.25rem;
+     font-weight: 500;
+}

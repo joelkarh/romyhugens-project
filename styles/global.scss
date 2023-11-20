@@ -1,4 +1,9 @@
 @import "./index.scss";
+*,
+html,
+body {
+     scroll-behavior: smooth;
+}
 body {
      font-size: $body-font;
      background-color: var(--cream) !important;
@@ -7,7 +12,7 @@ header {
      position: relative;
      padding: 33px 32px;
      margin-bottom: 80px;
-     border-bottom: 1px solid var(--black);
+     border-bottom: 1px solid rgba(#3333, 50%);
 }
 .hero {
      margin-bottom: 300px;
