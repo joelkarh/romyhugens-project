@@ -14,9 +14,7 @@ function Reviews() {
      const { title, btnText, reviewsData } = reviews
      const sectionRef = useRef(null);
      const triggerRef = useRef(null);
-
      gsap.registerPlugin(ScrollTrigger);
-
      useEffect(() => {
           const pin = gsap.fromTo(
                sectionRef.current,
@@ -29,11 +27,10 @@ function Reviews() {
                     duration: 1,
                     scrollTrigger: {
                          trigger: triggerRef.current,
-                         markers: true,
+                         markers: false,
                          start: "-250% top ",
                          end: "bottom",
                          scrub: 0.6,
-
                     },
                }
           );

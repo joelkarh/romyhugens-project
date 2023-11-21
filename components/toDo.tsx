@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { todo } from '../data'
 import styles from './todo.module.scss'
 import Image from 'next/image'
-import ToDoComponent from './toDoComonent'
+import ToDoComponent from './toDoComponent'
 function ToDo() {
      const [active, setActive] = useState(0);
      // const [clicked, setClick] = useState(null);

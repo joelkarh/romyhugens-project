@@ -5,7 +5,7 @@ export const menuItems = [
      },
      {
           title: "Over mij",
-          route: '/'
+          route: '/About'
      },
      {
           title: "How does it work?",
@@ -244,7 +244,7 @@ export const footerData = {
 
 }
 export const aboutHeaderData = {
-     title: "Hey there I'm Romy Hugens.",
+     title: `Hey there! \n  I'm Romy Hugens.`,
      description: "As a Certified Gut Health coach specializing in Health Optimization through Gut Health and the Abundance Mindset, I believe that with a healed gut, healing your mind and soul is inevitable. ",
      subtitle: "Create the life you deserve",
      subtitleText: "Nullam dictum felis eu pede mollis pretium. Duis lobortis massa imperdiet quam. ",
