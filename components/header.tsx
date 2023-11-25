@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { menuItems } from "../data"
 import navStyle from "./header.module.scss";
 function Header() {
@@ -15,13 +16,13 @@ function Header() {
                                    <nav className="nav">
                                         <ul className={navStyle.navItems}>{menuItems.map(({ title, route }, id) => (
                                              <li key={id}>
-                                                  <a href={route}>{title}</a>
+                                                  <Link href={route}>{title}</Link>
                                              </li>
                                         ))}
                                         </ul>
                                    </nav>
                                    <div className={`${navStyle.headerBtn}`}></div>
-                                   <a className={navStyle.arrow} href="/">Join me <span></span></a>
+                                   <Link className={navStyle.arrow} href="/">Join me <span></span></Link>
                               </div>
                          </div>
                     </section>

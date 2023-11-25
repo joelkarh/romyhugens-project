@@ -2,7 +2,7 @@ import { homesection2 } from "../data"
 import Button from "./button"
 import styles from "./homesection2.module.scss"
 function HomeSection2() {
-     const { title, subtitle, btnText, steps } = homesection2
+     const { title, subtitle, btnText, steps, btnColor } = homesection2
      return (
           <>
                <section className="homeSection2">
@@ -31,7 +31,7 @@ function HomeSection2() {
                          </div>
                          <div className="row">
                               <div className="col">
-                                   <Button title={btnText} />
+                                   <Button colorBtn={btnColor} title={btnText} />
                               </div>
                          </div>
                     </div>

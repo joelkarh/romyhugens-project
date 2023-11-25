@@ -3,7 +3,7 @@ import { heroItems } from "../data"
 import Button from "./button"
 import heroStyle from './hero.module.scss'
 function Hero() {
-     const { title, subTitle, imgUrl, btnText } = heroItems
+     const { title, subTitle, btnText, btnColor } = heroItems
      return (
           <>
                <section className="hero">
@@ -12,7 +12,7 @@ function Hero() {
                               <div className={`col-6 ${heroStyle.heroSection}`}>
                                    <h1 className="mb-4">{title}</h1>
                                    <p className={heroStyle.subtitle}>{subTitle}</p>
-                                   <Button title={btnText} />
+                                   <Button colorBtn={btnColor} title={btnText} />
                               </div>
                               <div className="col-6">
                                    <div className={`${heroStyle.heroBackground} position-relative`}>

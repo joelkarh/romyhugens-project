@@ -6,7 +6,7 @@ import Table from "./table"
 import Checked from "./checked"
 
 function HomeSection4() {
-     const { title, description, btnTitle, headTitles, content } = homeSection4
+     const { title, description, btnTitle, headTitles, content, btnColor } = homeSection4
      return (
           <>
                <section className="container">
@@ -18,7 +18,7 @@ function HomeSection4() {
                                         {description}
                                    </p>
                               </div>
-                              <Button title={btnTitle} />
+                              <Button colorBtn={btnColor} title={btnTitle} />
                          </div>
                          <div className="col-7">
                               <div>

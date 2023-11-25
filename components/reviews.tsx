@@ -11,7 +11,7 @@ import { useEffect, useRef } from 'react';
 gsap.registerPlugin(ScrollTrigger);
 let wrapper
 function Reviews() {
-     const { title, btnText, reviewsData } = reviews
+     const { title, btnText, reviewsData, btnColor } = reviews
      const sectionRef = useRef(null);
      const triggerRef = useRef(null);
      gsap.registerPlugin(ScrollTrigger);
@@ -30,7 +30,7 @@ function Reviews() {
                          markers: false,
                          start: "-250% top ",
                          end: "bottom",
-                         scrub: 0.6,
+                         scrub: 3.5,
                     },
                }
           );
@@ -52,7 +52,7 @@ function Reviews() {
                                    <h4>{title}</h4>
                               </div>
                               <div className="col-4">
-                                   <Button title={btnText} />
+                                   <Button colorBtn={btnColor} title={btnText} />
                               </div>
                          </div>
                     </div>

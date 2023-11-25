@@ -1,5 +1,6 @@
 interface buttonTxt {
   title: string;
+  colorBtn: string;
 }
 interface reviewBox {
   imgSrc: string;

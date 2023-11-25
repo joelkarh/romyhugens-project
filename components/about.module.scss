@@ -24,15 +24,90 @@
           }
      }
 }
+.image {
+     margin-bottom: 80px;
+}
+.imageContainer {
+     height: 459px;
+     overflow: hidden;
+}
 .imageLeft {
      position: relative;
-     max-width: 545px;
-     height: 459px;
+     height: 100%;
      width: 100%;
+     overflow: hidden;
+     &:before {
+          position: absolute;
+          content: "";
+          width: 100%;
+          max-height: 100%;
+          height: 100%;
+          background-image: url("/overlay-oldpicture.png");
+          background-position: top;
+          background-size: cover;
+          background-repeat: no-repeat;
+     }
 }
 .imageRight {
      position: relative;
-     max-width: 775px;
      width: 100%;
      height: 459px;
+     overflow: hidden;
+     mix-blend-mode: multiply;
+     &:before {
+          position: absolute;
+          content: "";
+          width: 100%;
+          max-height: 459px;
+          height: 100%;
+          background-image: url("/overlay-oldpicture.png");
+          background-position: top;
+          background-size: cover;
+          background-repeat: no-repeat;
+     }
+}
+.aboutContent {
+     font-family: $primary-font;
+     font-size: $text-lg-font;
+     font-weight: $header-weight;
+     margin-bottom: 160px;
+     line-height: 1.05;
+     h2 {
+          margin-top: 16px;
+          margin-bottom: 24px;
+          font-size: 2.5rem;
+          font-weight: 700;
+          line-height: 1.2;
+     }
+     p {
+          -moz-column-count: 2;
+          column-count: 2;
+          -moz-column-gap: 32px;
+          column-gap: 32px;
+     }
+}
+
+.aboutCta {
+     color: var(--darkcream);
+     background-color: var(--black);
+     margin-bottom: 120px;
+     h2 {
+          font-size: 2.5rem;
+          font-family: $primary-font;
+          margin-bottom: 13px;
+          font-weight: $header-weight;
+          text-wrap: nowrap;
+     }
+     p {
+          margin-bottom: 32px;
+     }
+}
+.aboutSvg {
+     padding: 60px 0;
+     display: flex;
+     justify-content: center;
+}
+.aboutCtaContent {
+     margin-top: auto;
+     margin-bottom: auto;
 }

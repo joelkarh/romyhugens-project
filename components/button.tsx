@@ -1,12 +1,13 @@
-import btnPrimaryStyle from "./button.module.scss"
-function Button({ title }: buttonTxt) {
+import Link from "next/link"
+
+function Button({ title, colorBtn }: buttonTxt) {
      return (
           <>
                <div>
-                    <a type="button" className={`${btnPrimaryStyle.buttonPrimary}`}>
+                    <Link href="#" type="button" data-btnColor={colorBtn} className={`buttonPrimary`}>
                          {title}
-                         <span className={btnPrimaryStyle.arrow}></span>
-                    </a>
+                         <span className="arrow"></span>
+                    </Link>
                </div>
           </>
      )
