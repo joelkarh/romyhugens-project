@@ -13,12 +13,10 @@ function ToDoComponent({ TodoTitle, TodoDescription, ImgSrc, Quote, }: TodoList)
      return (
           <>
                <div className={` row`}>
-                    <div className={`col-6 ${styles.todoAnimation} `}>
+                    <div className={`col d-flex `}>
                          <div className={styles.todocontentImage}>
                               <div style={backgroundStyle}></div>
                          </div>
-                    </div>
-                    <div className="col-6 d-flex justify-content-center align-items-center">
                          <div className={styles.todoContentWrapper}>
                               <div>
                                    <h5>{TodoTitle}</h5>

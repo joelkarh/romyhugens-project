@@ -4,7 +4,7 @@ function Button({ title, colorBtn }: buttonTxt) {
      return (
           <>
                <div>
-                    <Link href="#" type="button" data-btnColor={colorBtn} className={`buttonPrimary`}>
+                    <Link href="#" type="button" data-btncolor={colorBtn} className={`buttonPrimary`}>
                          {title}
                          <span className="arrow"></span>
                     </Link>

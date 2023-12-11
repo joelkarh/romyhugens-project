@@ -7,11 +7,16 @@ function HomeSection3() {
      return (
           <>
                <section className="homeSection3">
-                    <div className="container">
+                    <div className="container-fluid">
                          <div className={`row ${styles.imagewrapper}`}>
                               <div className="col">
                                    <div className={`${styles.quote__imagewrapper}`}>
-                                        <Image src={src} alt={alt} fill className={styles.quoteImage} priority />
+                                        <Image src={src} alt={alt} fill loading='lazy'
+                                             style={{
+                                                  objectFit: 'cover',
+                                                  objectPosition: 'top',
+                                             }}
+                                        />
                                    </div>
                               </div>
                          </div>

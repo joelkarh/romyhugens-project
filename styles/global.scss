@@ -1,4 +1,5 @@
 @import "./index.scss";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
 
 *,
 html,
@@ -72,6 +73,8 @@ header {
           width: 100%;
      }
 }
+
+.popupButton,
 .buttonPrimary {
      align-items: center;
      display: flex;
@@ -109,6 +112,7 @@ header {
           transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
           width: 38px;
           &::before {
+               background-color: var(--cream);
                bottom: auto;
                content: "";
                display: block;
@@ -141,6 +145,77 @@ header {
           }
      }
 }
+.popupbuttonWrapper {
+     align-items: center;
+     display: flex;
+     justify-content: center;
+     max-width: 236px;
+     position: relative;
+     .arrow {
+          background-color: var(--cream);
+          bottom: auto;
+          display: block;
+          height: 1px;
+          left: auto;
+          position: absolute;
+          right: 15%;
+          top: auto;
+          transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+          transform-style: preserve-3d;
+          transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+          width: 38px;
+          &::before {
+               background-color: var(--cream);
+               bottom: auto;
+               content: "";
+               display: block;
+               height: 1px;
+               left: auto;
+               position: absolute;
+               right: 0;
+               top: 0px;
+               transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+                    skew(0deg);
+               transform-style: preserve-3d;
+               transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+               width: 16px;
+          }
+          &::after {
+               background-color: var(--cream);
+               bottom: auto;
+               content: "";
+               display: block;
+               height: 1px;
+               left: auto;
+               position: absolute;
+               right: 0;
+               top: 0;
+               transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+                    skew(0deg);
+               transform-style: preserve-3d;
+               transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+               width: 16px;
+          }
+     }
+     &:hover,
+     &:focus {
+          opacity: 1;
+          .arrow {
+               transform: translate3d(4px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+                    skew(0deg);
+               &::before {
+                    top: -5px;
+                    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(35deg)
+                         skew(0deg);
+               }
+               &::after {
+                    top: 5px;
+                    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-35deg)
+                         skew(0deg);
+               }
+          }
+     }
+}
 
 // button
 a[data-btnColor="light"] {
@@ -154,6 +229,7 @@ a[data-btnColor="light"] {
           }
      }
 }
+.popupButton,
 a[data-btnColor="dark"] {
      background-color: var(--black);
      color: var(--cream);
@@ -167,12 +243,12 @@ a[data-btnColor="dark"] {
 }
 // image on contact
 .contact {
-     padding-bottom: 120px;
-     background-image: url("/contactBg.svg");
      background-color: var(--darkcream);
-     background-repeat: no-repeat;
+     background-image: url("/contactBg.svg");
      background-position: bottom;
+     background-repeat: no-repeat;
      background-size: cover;
+     padding-bottom: 120px;
 }
 .imgCaption {
      background-color: var(--black);
@@ -206,8 +282,66 @@ a[data-btnColor="dark"] {
 
 .contactForm {
      h1 {
+          font-family: 400;
           font-size: $text-xl-font;
           line-height: 1.05;
-          font-family: 400;
      }
+     display: flex;
+     flex-flow: column;
+     justify-content: center;
+}
+
+.mailWrapper {
+     margin-bottom: 12px;
+}
+.mailWrapper,
+.callWrapper {
+     align-items: center;
+     display: flex;
+     svg {
+          margin-right: 24px;
+     }
+     p {
+          color: #333;
+          font-family: $primary-font;
+          font-size: 22px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 105%; /* 23.1px */
+          margin-bottom: 0;
+
+          &:hover,
+          :focus {
+               margin-bottom: 5px;
+          }
+     }
+     a {
+          color: #333;
+          font-family: $secondary-font;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 165%; /* 26.4px */
+          transition: margin-bottom 200ms cubic-bezier(0.215, 0.61, 0.355, 1);
+          &:hover,
+          :focus {
+               margin-bottom: 5px;
+          }
+     }
+}
+//animation
+
+.callwrapper-content .mailwrapper-content {
+     align-items: center;
+     display: flex;
+     flex-flow: column;
+     justify-content: center;
+}
+
+.popupbuttonWrapper {
+     margin-bottom: 32px;
+}
+.popupButton {
+     color: var(--cream);
+     margin-bottom: 24px;
 }

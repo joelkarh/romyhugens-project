@@ -22,7 +22,7 @@ function Header() {
                                         </ul>
                                    </nav>
                                    <div className={`${navStyle.headerBtn}`}></div>
-                                   <Link className={navStyle.arrow} href="/">Join me <span></span></Link>
+                                   <Link className={navStyle.arrow} href="/Booking">Join me <span></span></Link>
                               </div>
                          </div>
                     </section>

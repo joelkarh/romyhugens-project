@@ -4,49 +4,49 @@
      margin-bottom: 120px;
      h5 {
           color: var(--black);
-          text-align: center;
           font-family: Baskerville;
           font-size: 2.75rem;
           font-weight: 400;
           line-height: 1.05; /* 46.2px */
           margin-bottom: 24px;
+          text-align: center;
      }
      p {
           color: var(--black);
-          text-align: center;
           font-family: Oxygen;
           font-size: 1.375rem;
           font-weight: 400;
           line-height: 1.6; /* 36.3px */
-          max-width: 717px;
-          width: 100%;
           margin: 0 auto;
+          max-width: 717px;
+          text-align: center;
+          width: 100%;
      }
 }
 
 .todoItem {
-     max-width: 596px;
-     width: 100%;
-     display: flex;
      background-color: var(--darkcream);
+     border-radius: 50px;
+     display: flex;
      justify-content: space-between;
      margin: 32px auto 56px auto;
-     border-radius: 50px;
+     max-width: 596px;
+     width: 100%;
      button {
-          text-align: center;
+          align-items: center;
+          border-radius: 70px;
+          display: flex;
           font-family: Baskerville;
           font-size: $text-font;
           font-weight: 400;
-          line-height: 1.65; /* 29.7px */
-          padding: 7px 51px;
-          max-width: 184px;
-          width: 100%;
-          display: flex;
           justify-content: center;
-          align-items: center;
-          border-radius: 70px;
-          transition: background-color 300ms ease-in;
+          line-height: 1.65; /* 29.7px */
           margin: 5px;
+          max-width: 184px;
+          padding: 7px 51px;
+          text-align: center;
+          transition: background-color 300ms ease-in;
+          width: 100%;
           &:hover,
           &:focus {
                background-color: var(--black);
@@ -59,7 +59,7 @@
      }
 }
 .rowbg {
-     background-color: var(--darkcream);
+     background-color: transparent;
      opacity: 100%;
      transition: opacity 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
@@ -72,31 +72,34 @@
 }
 
 .todoItems {
-     position: relative;
-     display: flex;
      background-color: var(--darkcream);
+     display: flex;
+     position: relative;
 }
 .todocontentImage {
-     position: relative;
-     background-size: cover;
-     overflow: hidden;
-     width: 100%;
-     max-width: 676px;
+     background-color: var(--black);
+     background-repeat: no-repeat;
+     background-size: contain;
      height: 676px;
+     max-width: 676px;
+     overflow: hidden;
+     padding: 80px;
+     position: relative;
+     width: 100%;
      // border: 80px solid var(--black);
      z-index: 1;
-     padding: 80px;
 }
 .todoContentWrapper {
-     padding-left: 60px;
-     padding-right: 60px;
+     background-color: var(--darkcream);
      display: flex;
      flex-flow: column;
      justify-content: center;
+     padding-left: 60px;
+     padding-right: 60px;
      h5 {
           font-family: $primary-font;
-          font-weight: $header-weight;
           font-size: $text-lg-font;
+          font-weight: $header-weight;
           line-height: 1.05;
           margin-bottom: 24px;
           text-transform: capitalize;

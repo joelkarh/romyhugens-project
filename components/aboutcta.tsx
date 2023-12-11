@@ -8,7 +8,7 @@ import Button from "./button"
 
 function AboutCta() {
      let { aboutContent } = aboutHeaderData
-     let { title, description, img, btnText, btnColor } = aboutContent
+     let { title, description, img, btnText, btncolor, } = aboutContent
      const sunRef = useRef<HTMLDivElement>(null);
      useEffect(() => {
           gsap.registerPlugin(ScrollTrigger)
@@ -43,7 +43,7 @@ function AboutCta() {
                          <div className={styles.aboutCtaContent}>
                               <h2>{title}</h2>
                               <p>{description}</p>
-                              <Button colorBtn={btnColor} title={btnText} />
+                              <Button colorBtn={btncolor} title={btnText} />
                          </div>
                     </div>
                </div>

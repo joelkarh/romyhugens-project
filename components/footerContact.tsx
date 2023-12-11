@@ -1,11 +1,11 @@
 import Link from "next/link"
 import { footerData } from "../data"
 import styles from "./footer.module.scss"
-function Footer() {
+function FooterContact() {
      const { title, shout, links } = footerData
      return (<>
 
-          <section className={`container-fluid ${styles.footerTop}`}>
+          <section className={`container-fluid `}>
                <div className="container">
                     <div className="row">
                          <div className="col-6">
@@ -62,4 +62,4 @@ function Footer() {
      )
 }
 
-export default Footer
+export default FooterContact
